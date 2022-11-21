@@ -12,10 +12,7 @@ const penelitianShow = (req, res) => {
                     });
             } else {
                 res.status(200)
-                    .json({
-                        'status': 'success',
-                        'data': result
-                    });
+                    .json(result);
             }
         }
     )
